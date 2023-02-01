@@ -5,7 +5,7 @@
 - - - - 
 
 ## Description
-> Cratedigger is a an app that does exactly what it states... We dig through the crate for you, to really find those gems. Looking for your jam? We got you. Cratedigger is a music streaming web app.
+> Cratedigger is a music streaming app that does exactly what it states... We dig through the crate for you, to really find those gems. Looking for your jam? We got you.
 
 ## Installation
 > N/A
