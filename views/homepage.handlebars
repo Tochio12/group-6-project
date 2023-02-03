@@ -1,16 +1,34 @@
-<h1>Homepage view</h1>
-<!DOCTYPE html>
-<html lang="en">
+<div id="home">
+    <div class="contianer">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+        <div class="row">
+            <div class="col-8 offest-2">
+                <h1 id="songTitleScreen">{{msg}}</h1>
 
-<body>
-    
-    
-</body>
-</html>
+                <h2 id="test">Let us know what you think with a like or dislike!</h2>
+
+                <h3 id="yourChoice"></h3>
+
+                <button type="button" class="btn btn-success changeButton">Change Module</button>
+                <button type="button" class="btn btn-success logOutButton">Logout</button>
+
+                <h3 style="visibility:hidden">Your favorites:</h3>
+
+                <ul id="example-list" class="list-group-item local-render" style="visibility:hidden">
+                    {{#each favoriteSongs}}
+                    
+                    <li><strong>Song Name: </strong>{{songName}}
+                        <br>
+                        <strong>Artist: </strong>{{artistName}}
+                        <br>
+                        <button class="btn delete">ｘ</button>
+                    </li>
+                    <br>
+
+                    {{/each}}
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
