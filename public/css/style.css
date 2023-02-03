@@ -1,1 +1,14 @@
 
+header {
+    text-align: center;
+}
+
+main {
+    /* background-color: #5B5EA6; */
+    padding: 0 0 15px 0;
+}
+
+footer {
+    text-align: center; 
+    text-decoration: none;
+}
