@@ -1,4 +1,6 @@
-
+html{
+    background-color: beige;
+}
 header {
     text-align: center;
 }
@@ -7,8 +9,18 @@ main {
     /* background-color: #5B5EA6; */
     padding: 0 0 15px 0;
 }
-
+body {
+    background-color: beige !important;
+}
 footer {
     text-align: center; 
     text-decoration: none;
+}
+.column {
+    align-items: center;
+    text-align: center;
+    background-color: olive;
+    border-style: solid;
+    border-width: 5px;
+    border-color: darkolivegreen
 }
