@@ -1,35 +1,24 @@
-<div class = "column">
-    <!--Grouping Login and Sign-up Portions together (Both in login.js for functions)-->
-    <div class = "login-portion">
-        <h1>Login</h1>
-
-        <form class="login-form">
-            <div class="portion">
-                <label for="email-log">E-mail:</label>
-                <input class="form-input" type="text" id="emailogin"/>
-            </div>
-            <div class="portion">
-                <label for="password-log">Password:</label>
-                <input class="form-input" type="text" id="password-login"/>
-                <button class="button" type="submit">Log In</button>
-            </div>
-        </form>
+<div class="row justify-content-center">
+  <div class="col-5">
+    <div class="card">
+      <div class="card-header">
+        <h2>Login</h2>
+      </div>
+      <form id="login-form" class="card-body">
+        <div>
+          <label for="username-input-login">Username</label>
+          <input type="text" id="username-input-login" />
+        </div>
+        <div>
+          <label for="password-input-login" class="form-label">Password</label>
+          <input type="password" id="password-input-login" />
+        </div>
+        <button type="submit" id="login-btn" class="btn">Login!</button>
+        <a class="btn btn-primary mt-3" href="/signup">Sign up instead</a>
+      </form>
     </div>
-    <div class = "signup-portion">
-        <h2>Sign-Up</h2>
-        <form class="signup-form">
-            <div class="portion">
-                <label for="email-sign">E-mail:</label>
-                <input class="form-input" type="text" id="emailsign"/>
-            </div>
-            <div class="portion">
-                <label for="password-sign">Password:</label>
-                <input class="form-input" type="text" id="password-sign"/>
-                <button class="button" type="submit">Sign Up</button>
-            </div>
-        </form>
-    </div>
+  </div>
 </div>
 
 <script src="/js/login.js"></script>
-<script src="/js/logout.js"></script>
+
