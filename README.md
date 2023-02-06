@@ -19,16 +19,16 @@
 > That being said, our team did a great job in brainstorming concepts and ideas and being decisive on when and where to execute.
 >
 > Built by:
-> * Chris Carapella
 > * Tochio Herrera
 > * Francis Lao
 > * Ryan Villanueva
+> * Chris Carapella
 
 ## License
-> TBD
+> MIT License
 
 ## Features
-> TBD
+> This program features a method to randomize and select songs that may appeal to or even peak the curiosity of the user. Randomly selecting five songs for the user to listen to while they are able to bookmark it to save for another time.
 
 ## Screenshot
 > 
