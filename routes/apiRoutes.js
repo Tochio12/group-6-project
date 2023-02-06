@@ -14,13 +14,13 @@ module.exports = function(app) {
       });
     });
 
-    // Get one random song from our database.
+    // Get one random song from our db
     app.get("/api/random-song", function(req, res) {
         findRandomSong(null, function(randomSong) {
         res.json(randomSong);
         });
     });
-        // Get for a recommended song based on data for the user.
+    // Get recommended song based on user data.
     app.get("/api/recommended-song/:id", function(req, res) {
         db.User.findOne({
             where: {
@@ -39,7 +39,6 @@ module.exports = function(app) {
             "altDislike"
             ]
         }).then(function(userIdResult) {
-            // var favoriteGenre = 'Beth's favorite genre function'(userIdResult);
             findRandomSong(favoriteGenre, function(randomSong) {
             res.json(randomSong);
             });
