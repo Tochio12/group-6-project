@@ -11,6 +11,8 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+const chalk = require('chalk');
+
 const sess = {
     secret: 'Super secret secret',
     cookie: {
@@ -43,3 +45,5 @@ const sess = {
   sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log('Now listening'));
   });
+
+  console.log(chalk.blue('Hello world!'));
