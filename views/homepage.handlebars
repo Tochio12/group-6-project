@@ -1,4 +1,6 @@
 
+<main>
+
 <div id="home">
     <div class="contianer">
 
@@ -36,7 +38,17 @@
                 </ul>
             </div>
         </div>
-
+        
+        <div class="p-3">
+            <h2 class="text-center text-light">Featured Songs</h2>
+            <div class="container animate__animated animate__fadeInUp">
+            <ol class="container ">
+            {{#each songs as |song|}}
+            {{>inventory-cards}}
+            {{/each}}
+            </ol>    
+        </div> 
+            
         <div class="modal" id="selectionModal" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -48,19 +60,5 @@
                 </div>
             </div>
         </div>
+    </main>
 
-    </div>
-</div>
-<<<<<<< HEAD
-
-<script src="./homepage.js"></script>
-=======
-<h1>Homepage view</h1>
-
-
-<<<<<<< HEAD
-<script src="./homepage.js"></script>
->>>>>>> f8de90c772e8af63c2c03c8ce9a1e894dfddd615
-=======
-{{!-- <script src="./homepage.js"></script> --}}
->>>>>>> 1f1c8e7f284a379fe1f63de4c21c37e76ef2c104

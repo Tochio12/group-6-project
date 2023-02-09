@@ -1,0 +1,72 @@
+<main class="">
+        <div class="container">
+            <div class="d-flex justify-content-around align-items-center p-3">
+                <h2 class="text-light">My Favorite Songs</h2>
+               
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Add +
+                </button>                
+              
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Add Your Song</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+
+
+        <!-- Form goes here -->
+        <form class="new-song">
+        <div>
+            <label for="song">Choose your song from the list:</label>
+            <input list="songs" name="song" id="song">
+            <datalist id="songs">
+                <option value="Save Your Tears">
+                <option value="Stay">
+                <option value="Levitating">
+                <option value="Shape of You">
+                <option value="Bad Habits">
+            </datalist>
+        </div>
+        <div>
+            <label for="retail-price">How many times would you listen in a day</label>
+            <input type="number" id="retail-price" />
+        </div>
+        <div>
+            <label for="notes">What is your favorite lyric</label>
+            <input type="text" id="notes" />
+        </div>
+    
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button submit" class="btn btn-primary" id="submit">Save changes</button>
+                        </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- List -->
+            <ol class="container animate__animated animate__fadeInUp">
+                {{#if songs.length}}
+                    {{#each songs as |song|}}
+                        {{>inventory-cards song}}
+                    {{/each}}
+            </ol>
+                    {{else}}
+                    <h6 class="text-center text-light font-italic m-3">You do not currently have any favorite songs!</h6>
+                {{/if}}
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<script src="/js/song.js"></script>
