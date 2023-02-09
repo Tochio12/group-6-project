@@ -1,10 +1,20 @@
+html {
+    background-color: beige;
+}
 
 header {
     text-align: center;
 }
 
-main {
-    background-color: #5B5EA6;
+body {
+    background-color: beige !important;
+}
+
+.column {
+    background-color: olive;
+    border-style: solid;
+    border-width: 10 px;
+    border-color: darkolivegreen;
     padding: 0 0 15px 0;
 }
 
