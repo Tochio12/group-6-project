@@ -6,6 +6,7 @@ const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, (req, res) => {
     console.log(req.session);
+    console.log('Arrived');
     Song.findAll({
         where: {
           user_id: req.session.user_id
