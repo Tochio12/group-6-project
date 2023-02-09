@@ -19,18 +19,18 @@
             <a class="nav-item nav-link" href="/">Home</a>
             <!-- Conditionally render login or logout links -->
             {{#if loggedIn}}
-                    <a id="logout" class="nav-item nav-link">Logout</a>
+                  <a class="nav-item nav-link" href="/inventory">Inventory</a>
+                  <a id="logout" class="nav-item nav-link">Logout</a>
                 {{else}}
                     <a class="nav-item nav-link" href="/login">Login</a>
                 {{/if}}
+            
           </div>
         </div>
       </nav>
     </header>
 
-
     <main class="container container-fluid mt-5">
-      <!-- Render the sub layout -->
       {{{ body }}}
     </main>
     <footer>

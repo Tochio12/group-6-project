@@ -1,61 +1,14 @@
-
-<div id="home">
-    <div class="contianer">
-
-        <div class="row">
-            <div class="col-8 offest-2">
-                <h2 id="songTitleScreen">{{msg}}</h2>
-
-                <h3 id="test">Let us know what you think with a like or dislike!</h3>
-
-                <h3 id="yourChoice"></h3>
-{{!-- 
-                <button type="button" class="btn btn-success changeButton">Change Module</button>
-                <button type="button" class="btn btn-success logOutButton">Logout</button> --}}
-
-                <h3 style="visibility:hidden">Your favorites:</h3>
-
-                <ul id="example-list" class="list-group-item local-render" style="visibility:hidden">
-                    {{#each favoriteSongs}}
-                    
-                    <li><strong>Song Name: </strong>{{songName}}
-                        <br>
-                        <strong>Artist: </strong>{{artistName}}
-                        <br>
-                        <button class="btn delete">ｘ</button>
-                    </li>
-                    <br>
-
-                    {{/each}}
-
-                </ul>
+<main>
+        <div class="p-3">
+            <h2 class="text-center text-light">Featured Songs</h2>
+            <div class="container animate__animated animate__fadeInUp">
+            <ol class="container ">
+            {{#each songs as |song|}}
+            {{>inventory-cards}}
+            {{/each}}
+            </ol>    
+            </div> 
             </div>
         </div>
+    </main>
 
-        <div class="modal" id="selectionModal" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <h5 class="modal-title">What would you like Spotifind Me to do?</h5>
-                    <div class="modal-body">
-                        <button type="button" class="btn btn-success selectButton" choice="recommend">Please Recommend a Song!</button>
-                        <button type="button" class="btn btn-success selectButton" choice="random">Give me Random Songs!</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-<<<<<<< HEAD
-
-<script src="./homepage.js"></script>
-=======
-<h1>Homepage view</h1>
-
-
-<<<<<<< HEAD
-<script src="./homepage.js"></script>
->>>>>>> f8de90c772e8af63c2c03c8ce9a1e894dfddd615
-=======
-{{!-- <script src="./homepage.js"></script> --}}
->>>>>>> 1f1c8e7f284a379fe1f63de4c21c37e76ef2c104
