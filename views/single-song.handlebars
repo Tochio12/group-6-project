@@ -1,10 +1,7 @@
 <div class="row justify-content-center">
 <div class="col-md-9">
-<!-- displaying articles -->
 {{> inventory-cards song}}
 </div>  </div>
-<!-- displaying form and comments-->
-<!-- only display if logged in -->
 {{#if loggedIn}}
 <div class="">
   <div class="row justify-content-center">
@@ -17,7 +14,7 @@
         <div class="row justify-content-center">
           <button type="submit" class="btn-primary rounded m-3">Add Comment</button>
           <button type="button" class="upvote-btn btn-primary rounded m-3" id="upvote-btn">Vote</button>
-          <button type="delete" class="btn-danger rounded m-3" id="delete-song-btn">Song</button>
+          <button type="delete" class="btn-danger rounded m-3" id="delete-song-btn">Delete Song</button>
         </div>
       </form>
     </div>
