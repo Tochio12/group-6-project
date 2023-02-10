@@ -3,7 +3,7 @@
                         <div class="card shadow bg-white rounded">
                             <div class="card-header">
                                 <div class="row">
-                                <span class="col-4 font-weight-bold"><a href="/inventory/song/{{id}}"><i class="fas fa-glass-song"></i>  {{name}}</a></span>
+                                <span class="col-4 font-weight-bold"><a href="/inventory/song/{{id}}"> {{name}}</a></span>
                                 <span class="col-4 font-italic"></span>
                                 <span class="col-4 text-right font-weight-bold">{{vote_count}} {{format_plural "vote" vote_count}}</span>
                                 </div>
@@ -11,7 +11,7 @@
                             <div class="card-body row">
                                 <img id="song-pic" class="rounded" src="/images/{{name}}.jpg" alt="{{name}}">
                                 <div class="col-7">
-                                    <p>Favorite Fan: {{user.username}}</p>
+                                    <p>Fan: {{user.username}}</p>
                                     <p>How many Times listened too: {{price_paid}}</p>
                                     <p>Notes: {{notes}}</p>
                                 </div>

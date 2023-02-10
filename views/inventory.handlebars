@@ -1,7 +1,7 @@
-<main class="">
+<main>
         <div class="container">
             <div class="d-flex justify-content-around align-items-center p-3">
-                <h2 class="text-light">My Favorite Songs</h2>
+                <h2 class="text-dark">My Favorite Songs</h2>
                
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                     Add +
@@ -19,7 +19,6 @@
                         <div class="modal-body">
 
 
-        <!-- Form goes here -->
         <form class="new-song">
         <div>
             <label for="song">Choose your song from the list:</label>
@@ -51,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <!-- List -->
+
             <ol class="container animate__animated animate__fadeInUp">
                 {{#if songs.length}}
                     {{#each songs as |song|}}
@@ -59,13 +58,14 @@
                     {{/each}}
             </ol>
                     {{else}}
-                    <h6 class="text-center text-light font-italic m-3">You do not currently have any favorite songs!</h6>
+                    <h6 class="text-center text-dark font-italic m-3">You do not currently have any favorite songs!</h6>
                 {{/if}}
         </div>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
 
